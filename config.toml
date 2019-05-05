@@ -6,6 +6,7 @@ uglyurls = true
 
 [permalinks]
   blog = ":year-:month-:day-:title"
+  tags = "tags-:title"
 
 ## Main Menu
 [[menu.main]]
