@@ -2,3 +2,7 @@ baseURL = "http://example.org/"
 languageCode = "en-us"
 title = "My New Hugo Site"
 theme = "mediumish-gohugo-theme"
+uglyurls = true
+
+[permalinks]
+  blog = ":year-:month-:day-:title"
