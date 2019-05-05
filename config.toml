@@ -6,3 +6,16 @@ uglyurls = true
 
 [permalinks]
   blog = ":year-:month-:day-:title"
+
+## Main Menu
+[[menu.main]]
+    name = "Intro"
+    weight =   1
+    identifier = "intro"
+    url = "/"
+
+[[menu.main]]
+    name = "Blog"
+    weight = 100
+    identifier = "blog"
+    url = "/blog.html"
