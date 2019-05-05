@@ -1,14 +1,23 @@
-baseURL = "http://example.org/"
-languageCode = "en-us"
-title = "My New Hugo Site"
+baseURL = "http://jandolezal.cz/"
+title = "jandolezal.cz"
+languageCode = "cs-cz"
+newContentEditor = "vi"
 theme = "mediumish-gohugo-theme"
+pygmentsStyle = "native"
 uglyurls = true
+copyright = "Jan Doležal - All rights reserved"
 disqusShortname = "jandolezal"
+
+[author]
+  name = "Jan Doležal"
 
 [permalinks]
   blog = ":year-:month-:day-:title"
   tags = "tags-:title"
 
+[params.social]
+  github = "dolezaljan"
+  twitter = "_JanDolezal"
 ## Main Menu
 [[menu.main]]
     name = "Intro"
