@@ -20,3 +20,9 @@ uglyurls = true
     weight = 100
     identifier = "blog"
     url = "/blog.html"
+
+[[menu.main]]
+    name = "RSS"
+    weight = 101
+    identifier = "rss"
+    url = "/files/index.xml"
