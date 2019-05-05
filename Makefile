@@ -4,7 +4,7 @@ all: build deploy
 build:
 	rm -rf public/
 	hugo
-	rm public/index.html
+	rm public/index.html public/404.html
 	mv public/index.xml public/files/blog/index.xml
 
 start:
