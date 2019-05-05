@@ -5,7 +5,7 @@ build:
 	rm -rf public/
 	hugo
 	rm public/index.html
-	mv public/index.xml public/files/index.xml
+	mv public/index.xml public/files/blog/index.xml
 
 start:
 	hugo server -w -v

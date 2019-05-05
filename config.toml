@@ -35,4 +35,4 @@ disqusShortname = "jandolezal"
     name = "RSS"
     weight = 101
     identifier = "rss"
-    url = "/files/index.xml"
+    url = "/files/blog/index.xml"
