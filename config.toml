@@ -17,7 +17,12 @@ disqusShortname = "jandolezal"
 
 [params.social]
   github = "dolezaljan"
-  twitter = "_JanDolezal"
+  #linkedin = ""
+  #xing = ""
+  #medium = ""
+  twitter = "cagedHamster"
+  instagram = "_jandolezal"
+
 ## Main Menu
 [[menu.main]]
     name = "Intro"
