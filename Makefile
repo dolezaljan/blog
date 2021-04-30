@@ -11,4 +11,4 @@ start:
 	hugo server -w -v
 
 deploy:
-	python wedos-miniweb-cli/wedos-miniweb-cli.py -v -d jandolezal.cz -p ./public/
+	python2 wedos-miniweb-cli/wedos-miniweb-cli.py -v -d jandolezal.cz -p ./public/
