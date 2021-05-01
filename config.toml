@@ -7,6 +7,7 @@ pygmentsStyle = "native"
 uglyurls = true
 copyright = "Jan Doležal - All rights reserved"
 disqusShortname = "jandolezal"
+removePathAccents = true
 
 [author]
   name = "Jan Doležal"
