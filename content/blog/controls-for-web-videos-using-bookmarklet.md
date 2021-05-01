@@ -20,7 +20,7 @@ First of all make sure your bookmark bar is visible. If not press `Ctrl + Shift 
 
 Now perform right click on the bookmark bar and select `Add page...` or `New Bookmark...` respectively.
 
-![bookmarks](/files/img/moz_bookmark.png)
+![bookmarks](/files/blog/img/moz_bookmark.png)
 
 Fill desired functionalities listed below and you are all set!
 
@@ -46,35 +46,51 @@ These features will work only on the video content that is delivered by the mean
 
 Let's dismantle now one of the bookmarklets:
 
-|                                                                                               |     |
-|   ---                                                                                         | --- |
-|`javascript: (function ()                                                `                     |     |
-|`{                                                                       `                     |     |
-|&nbsp;&nbsp;`inc = 0.2;                                                        `               | Set increment of playback rate.   |
-|&nbsp;&nbsp;`vids = document.getElementsByTagName("video");                    `               | Find all \<[video](https://www.w3schools.com/html/html5_video.asp)\>s.   |
-|&nbsp;&nbsp;`for (key in vids)                                                 `               | For each of found videos...    |
-|&nbsp;&nbsp;`{                                                                 `               |     |
-|&nbsp;&nbsp;&nbsp;&nbsp;`vids[key].defaultPlaybackRate += inc;                             `   | ...increase playback rates.    |
-|&nbsp;&nbsp;&nbsp;&nbsp;`vids[key].playbackRate += inc;                                    `   |     |
-|&nbsp;&nbsp;`};                                                                `               |     |
-|&nbsp;&nbsp;`allframes = document.getElementsByTagName("iframe");              `               | Find all \<[iframe](https://www.w3schools.com/tags/tag_iframe.asp)\>s, where other    |
-|                                                                                               | \<video\>s could be hiding.    |
-|&nbsp;&nbsp;`for (frm in allframes)                                            `               | For each frame...    |
-|&nbsp;&nbsp;`{                                                                 `               |     |
-|&nbsp;&nbsp;&nbsp;&nbsp;`curFrm = allframes[frm].contentDocument;                  `           | ...get HTML [content](https://www.w3schools.com/jsref/prop_frame_contentdocument.asp),...    |
-|&nbsp;&nbsp;&nbsp;&nbsp;`if (curFrm != null && curFrm != undefined)                `           | ...filter non-empty ones and...    |
-|&nbsp;&nbsp;&nbsp;&nbsp;`{                                                         `           |     |
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`frmVids = curFrm.getElementsByTagName("video");   `       | ...do the same as above.    |
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`for (key in frmVids)                              `       |     |
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`{                                                 `       |     |
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`frmVids[key].defaultPlaybackRate += inc;  `   |     |
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`frmVids[key].playbackRate += inc;         `   |     |
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`}                                                 `       |     |
-|&nbsp;&nbsp;&nbsp;&nbsp;`}                                                         `           |     |
-|&nbsp;&nbsp;`}                                                                 `               |     |
-|`})()                                                                    `                     |     |
+<style>
+table:nth-of-type(2)
+{
+  margin-bottom: 10px;
+}
+table:nth-of-type(2) td:nth-child(1)
+{
+  background-color:#202020;
+}
+pre
+{
+  border:0px;
+  padding:0;
+  margin:0;
+}
+</style>
 
-
+|                                                                                                    |     |
+|   ---                                                                                              | --- |
+|{{< highlight js >}}javascript: (function (){{< /highlight >}}                                      |     |
+|{{< highlight js >}}{{{< /highlight >}}                                                             |     |
+|{{< highlight js >}}  inc = 0.2;{{< /highlight >}}                                                  | Set increment of playback rate.   |
+|{{< highlight js >}}  vids = document.getElementsByTagName("video");{{< /highlight >}}              | Find all \<[video](https://www.w3schools.com/html/html5_video.asp)\>s.   |
+|{{< highlight js >}}  for (key in vids){{< /highlight >}}                                           | For each of found videos...    |
+|{{< highlight js >}}  {{{< /highlight >}}                                                           |     |
+|{{< highlight js >}}    vids[key].defaultPlaybackRate += inc;{{< /highlight >}}                     | ...increase playback rates.    |
+|{{< highlight js >}}    vids[key].playbackRate += inc;{{< /highlight >}}                            |     |
+|{{< highlight js >}}  };{{< /highlight >}}                                                          |     |
+| &nbsp;                                                                                             |     |
+|{{< highlight js >}}  allframes = document.getElementsByTagName("iframe");{{< /highlight >}}        | Find all \<[iframe](https://www.w3schools.com/tags/tag_iframe.asp)\>s, where other |
+|                                                                                                    | \<video\>s could be hiding.    |
+|{{< highlight js >}}  for (frm in allframes){{< /highlight >}}                                      | For each frame...    |
+|{{< highlight js >}}  {{{< /highlight >}}                                                           |     |
+|{{< highlight js >}}    curFrm = allframes[frm].contentDocument;{{< /highlight >}}                  | ...get HTML [content](https://www.w3schools.com/jsref/prop_frame_contentdocument.asp),...    |
+|{{< highlight js >}}    if (curFrm != null && curFrm != undefined){{< /highlight >}}                | ...filter non-empty ones and...    |
+|{{< highlight js >}}    {{{< /highlight >}}                                                         |     |
+|{{< highlight js >}}      frmVids = curFrm.getElementsByTagName("video");{{< /highlight >}}         | ...do the same as above.    |
+|{{< highlight js >}}      for (key in frmVids){{< /highlight >}}                                    |     |
+|{{< highlight js >}}      {{{< /highlight >}}                                                       |     |
+|{{< highlight js >}}        frmVids[key].defaultPlaybackRate += inc;{{< /highlight >}}              |     |
+|{{< highlight js >}}        frmVids[key].playbackRate += inc;{{< /highlight >}}                     |     |
+|{{< highlight js >}}      }{{< /highlight >}}                                                       |     |
+|{{< highlight js >}}    }{{< /highlight >}}                                                         |     |
+|{{< highlight js >}}  }{{< /highlight >}}                                                           |     |
+|{{< highlight js >}}})(){{< /highlight >}}                                                          |     |
 
 All other listed bookmarklets are mere variations of the one explained above. Use [JS Beautify](https://www.prettifyjs.net/) to get more readable code.
 
