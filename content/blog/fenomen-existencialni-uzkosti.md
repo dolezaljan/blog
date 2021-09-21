@@ -92,6 +92,8 @@ Ve shodě s Tomášem Akvinským Frankl zdůrazňuje, že nejdůležitější pr
 pro účinek), ale účelová (proč konat), o níž hovoří jako o smyslu. Vrací tak člověka z technického (pozitivistického)
 chápání (, které je v dnešním světě stále vnímatelné,) do chápání původního.
 
+> Psáno pro Myšlení fenoménů současnosti (YBFC187), [FHS UK](https://fhs.cuni.cz/).
+
 ## Reference
 
 [1] FRANKL, Viktor Emil. Utrpení z nesmyslnosti života: psychoterapie pro dnešní dobu. Přeložil Petr BABKA.
